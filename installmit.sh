@@ -5,7 +5,7 @@ python3 -m ensurepip --upgrade
 python3 -m pip install --user pipx
 python3 -m pipx ensurepath
 export CARGO_BUILD_TARGED=aarch64-linux-android
-pipx install mitproxy
+pipx install mitmproxy
 wget https://raw.githubusercontent.com/Grasscutters/Grasscutter/stable/proxy_config.py
 wget https://raw.githubusercontent.com/Grasscutters/Grasscutter/stable/proxy.py
 echo -e "The configuration uses standard proxy settings, if you are a developer and want to make it easier to access your servers, the flag is in your hands heh, to manually change the proxy settings, use "nano proxy_config.py" where you can change the ip address of the destination server. After chmod +x runmitproxy.sh and running ./runmitproxy.sh don't forget to set the certificate to connect to the servers to "mitm.it" available after running the proxy and its correct configuration"
