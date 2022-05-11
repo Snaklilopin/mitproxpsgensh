@@ -1,10 +1,10 @@
 echo Check if you have the latest version of Termux terminal installed for this script and all further proxies/programs to work correctly. This script was made especially for those who want to join non-developer cognosphere private game servers. All rights reserved by their respective owners and used in fair use rights, further questions direct snaklilopin@megaeblan228.gq
-apt update && apt upgrade -y
-pkg install python nano wget rustc-dev
-python3 -m surepip --upgrade
+apt update && apt full-upgrade -y
+pkg install python nano wget rustc-dev -y
+python3 -m ensurepip --upgrade
 python3 -m pip install --user pipx
-python3 -m pipx surepath
-ekspor CARGO_BUILD_TARGED=aarch64-linux-android
+python3 -m pipx ensurepath
+export CARGO_BUILD_TARGED=aarch64-linux-android
 pipx install mitproxy
 wget https://raw.githubusercontent.com/Grasscutters/Grasscutter/stable/proxy_config.py
 wget https://raw.githubusercontent.com/Grasscutters/Grasscutter/stable/proxy.py
