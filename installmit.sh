@@ -4,7 +4,8 @@ pkg install python nano wget rustc-dev -y
 python3 -m ensurepip --upgrade
 python3 -m pip install --user pipx
 python3 -m pipx ensurepath
-export CARGO_BUILD_TARGED=aarch64-linux-android
+echo Maybe not working.. idk for what this not correctly export cargo build
+export CARGO_BUILD_TARGET=aarch64-linux-android
 pipx install mitmproxy
 wget https://raw.githubusercontent.com/Grasscutters/Grasscutter/stable/proxy_config.py
 wget https://raw.githubusercontent.com/Grasscutters/Grasscutter/stable/proxy.py
