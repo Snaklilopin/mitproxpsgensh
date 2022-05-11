@@ -1,5 +1,5 @@
 echo Check if you have the latest version of Termux terminal installed for this script and all further proxies/programs to work correctly. This script was made especially for those who want to join non-developer cognosphere private game servers. All rights reserved by their respective owners and used in fair use rights, further questions direct snaklilopin@megaeblan228.gq
-apt update && apt upgrade penuh
+apt update && apt upgrade -y
 pkg install python nano wget rustc-dev
 python3 -m surepip --upgrade
 python3 -m pip install --user pipx
